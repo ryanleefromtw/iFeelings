@@ -1,0 +1,194 @@
+CURRENT STATS:
+System memory usage:
+  SOff/Norm: 2 samples:
+    Cached: 101MB min, 103MB avg, 106MB max
+    Free: 18MB min, 20MB avg, 22MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 393MB min, 398MB avg, 404MB max
+    Native: 18MB min, 18MB avg, 19MB max
+  SOn /Norm: 2 samples:
+    Cached: 136MB min, 213MB avg, 291MB max
+    Free: 19MB min, 21MB avg, 22MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 391MB min, 396MB avg, 401MB max
+    Native: 20MB min, 22MB avg, 24MB max
+
+Per-Package Stats:
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+      * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+               TOTAL: 21% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+                 Top: 21% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+            Bg TOTAL: 58% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+          (Last Act): 0.18%
+            (Cached): 57% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+
+Summary:
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+           TOTAL: 21% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+             Top: 21% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+        Bg TOTAL: 58% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+      (Last Act): 0.18%
+        (Cached): 57% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+
+Run time Stats:
+  SOff/Norm: +12m11s946ms
+  SOn /Norm: +51m19s300ms (running)
+      TOTAL: +1h3m31s246ms
+
+Memory usage:
+  Kernel : 397MB (32 samples)
+  Native : 20MB (32 samples)
+  Persist: 200MB (54 samples)
+  Top    : 250MB (218 samples)
+  ImpFg  : 73MB (222 samples)
+  ImpBg  : 33MB (18 samples)
+  Service: 165MB (399 samples)
+  Receivr: 183KB (405 samples)
+  Home   : 18MB (24 samples)
+  LastAct: 4.5MB (31 samples)
+  CchAct : 15MB (11 samples)
+  CchCAct: 41MB (57 samples)
+  CchEmty: 150MB (241 samples)
+  Cached : 158MB (32 samples)
+  Free   : 21MB (32 samples)
+  TOTAL  : 1.5GB
+  ServRst: 26KB (84 samples)
+
+          Start time: 2017-07-17 08:56:00
+  Total elapsed time: +1h7m16s928ms (partial) libart.so
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOff/Norm: 18 samples:
+    Cached: 63MB min, 165MB avg, 300MB max
+    Free: 17MB min, 32MB avg, 80MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 364MB min, 388MB avg, 405MB max
+    Native: 15MB min, 20MB avg, 27MB max
+  SOn /Norm: 30 samples:
+    Cached: 89MB min, 200MB avg, 424MB max
+    Free: 17MB min, 31MB avg, 113MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 360MB min, 386MB avg, 410MB max
+    Native: 14MB min, 20MB avg, 29MB max
+
+Per-Package Stats:
+  * com.google.firebase.udacity.friendlychat / u0a207 / v1:
+      * com.google.firebase.udacity.friendlychat / u0a207 / v1:
+               TOTAL: 14% (43MB-69MB-98MB/37MB-60MB-88MB over 61)
+                 Top: 14% (43MB-69MB-98MB/37MB-60MB-88MB over 61)
+            Bg TOTAL: 13% (2.8MB-32MB-73MB/1.5MB-27MB-64MB over 17)
+          (Last Act): 3.4% (20MB-48MB-73MB/16MB-42MB-62MB over 6)
+            (Cached): 9.1% (2.8MB-23MB-71MB/1.5MB-19MB-64MB over 11)
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+      * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+               TOTAL: 13% (38MB-60MB-77MB/33MB-52MB-67MB over 26)
+                 Top: 13% (38MB-60MB-77MB/33MB-52MB-67MB over 26)
+            Bg TOTAL: 21% (2.7MB-14MB-56MB/1.0MB-11MB-47MB over 13)
+          (Last Act): 10% (4.3MB-21MB-56MB/2.2MB-16MB-47MB over 6)
+            (Cached): 11% (2.7MB-8.9MB-24MB/1.0MB-6.2MB-20MB over 7)
+      * com.google.firebase.iid.FirebaseInstanceIdService:
+        Process: com.google.firebase.udacity.friendlychat
+            Running count 2 / time 0.01%
+            Started count 1 / time 0.01%
+          Executing count 2 / time 0.00%
+
+Summary:
+  * com.google.firebase.udacity.friendlychat / u0a207 / v1:
+           TOTAL: 14% (43MB-69MB-98MB/37MB-60MB-88MB over 61)
+             Top: 14% (43MB-69MB-98MB/37MB-60MB-88MB over 61)
+        Bg TOTAL: 13% (2.8MB-32MB-73MB/1.5MB-27MB-64MB over 17)
+      (Last Act): 3.4% (20MB-48MB-73MB/16MB-42MB-62MB over 6)
+        (Cached): 9.1% (2.8MB-23MB-71MB/1.5MB-19MB-64MB over 11)
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+           TOTAL: 13% (38MB-60MB-77MB/33MB-52MB-67MB over 26)
+             Top: 13% (38MB-60MB-77MB/33MB-52MB-67MB over 26)
+        Bg TOTAL: 21% (2.7MB-14MB-56MB/1.0MB-11MB-47MB over 13)
+      (Last Act): 10% (4.3MB-21MB-56MB/2.2MB-16MB-47MB over 6)
+        (Cached): 11% (2.7MB-8.9MB-24MB/1.0MB-6.2MB-20MB over 7)
+
+Run time Stats:
+  SOff/Norm: +6h26m18s12ms
+  SOn /Norm: +4h39m20s807ms
+      TOTAL: +11h5m38s819ms
+
+Memory usage:
+  Kernel : 387MB (336 samples)
+  Native : 20MB (336 samples)
+  Persist: 207MB (612 samples)
+  Top    : 167MB (2617 samples)
+  ImpFg  : 74MB (3486 samples)
+  ImpBg  : 23MB (782 samples)
+  Service: 237MB (4672 samples)
+  Receivr: 324KB (5810 samples)
+  Home   : 17MB (271 samples)
+  LastAct: 16MB (530 samples)
+  CchAct : 19MB (115 samples)
+  CchCAct: 18MB (229 samples)
+  CchEmty: 179MB (2977 samples)
+  Cached : 180MB (336 samples)
+  Free   : 32MB (336 samples)
+  TOTAL  : 1.5GB
+  ServRst: 259KB (2977 samples)
+
+          Start time: 2017-07-16 09:48:40
+  Total elapsed time: +1d0h14m31s947ms (partial) libart.so
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOff/Norm: 3 samples:
+    Cached: 90MB min, 99MB avg, 106MB max
+    Free: 18MB min, 21MB avg, 22MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 393MB min, 400MB avg, 404MB max
+    Native: 18MB min, 20MB avg, 22MB max
+  SOn /Norm: 3 samples:
+    Cached: 116MB min, 181MB avg, 291MB max
+    Free: 19MB min, 20MB avg, 22MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 386MB min, 393MB avg, 401MB max
+    Native: 20MB min, 22MB avg, 24MB max
+
+Per-Package Stats:
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+      * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+               TOTAL: 11% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+                 Top: 11% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+            Bg TOTAL: 78% (2.7MB-4.5MB-6.2MB/1.0MB-2.0MB-2.2MB over 7)
+          (Last Act): 44% (4.3MB-5.2MB-6.2MB/2.2MB-2.2MB-2.2MB over 4)
+            (Cached): 34% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+
+Summary:
+  * com.google.firebase.udacity.friendlychat / u0a213 / v1:
+           TOTAL: 11% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+             Top: 11% (38MB-56MB-65MB/33MB-46MB-53MB over 10)
+        Bg TOTAL: 78% (2.7MB-4.5MB-6.2MB/1.0MB-2.0MB-2.2MB over 7)
+      (Last Act): 44% (4.3MB-5.2MB-6.2MB/2.2MB-2.2MB-2.2MB over 4)
+        (Cached): 34% (2.7MB-3.4MB-3.8MB/1.0MB-1.7MB-2.1MB over 3)
+
+Run time Stats:
+  SOff/Norm: +43m14s328ms
+  SOn /Norm: +1h20m31s811ms
+      TOTAL: +2h3m46s139ms
+
+Memory usage:
+  Kernel : 395MB (42 samples)
+  Native : 21MB (42 samples)
+  Persist: 206MB (96 samples)
+  Top    : 257MB (388 samples)
+  ImpFg  : 71MB (589 samples)
+  ImpBg  : 33MB (25 samples)
+  Service: 191MB (794 samples)
+  Receivr: 216KB (836 samples)
+  Home   : 18MB (46 samples)
+  LastAct: 4.5MB (37 samples)
+  CchAct : 10MB (16 samples)
+  CchCAct: 27MB (82 samples)
+  CchEmty: 167MB (459 samples)
+  Cached : 152MB (42 samples)
+  Free   : 20MB (42 samples)
+  TOTAL  : 1.5GB
+  ServRst: 38KB (248 samples)
+
+          Start time: 2017-07-17 00:35:21
+  Total elapsed time: +9h27m52s172ms (partial) libart.so

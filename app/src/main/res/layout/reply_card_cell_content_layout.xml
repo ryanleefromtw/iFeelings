@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iV_cell_content_head_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:alpha="0.85"
+                android:scaleType="centerCrop"
+                android:src="@drawable/the_girl" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:paddingTop="7dp">
+
+
+                <ImageView
+                    android:id="@+id/iV_cell_content_close"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_close" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tV_cell_content_reply_num"
+                    style="@style/ContentImageBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="20dp"
+                    android:text="5"
+                    android:textColor="#a6000000"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/ContentImageBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tV_cell_content_reply_num"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="回覆"
+
+                    android:textColor="#dd000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tV_cell_content_liked_num"
+                    style="@style/ContentImageBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tV_cell_content_reply_num"
+                    android:layout_alignBottom="@+id/tV_cell_content_reply_num"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:text="14"
+                    android:textColor="#a6000000"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/ContentImageBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tV_cell_content_liked_num"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:text="收藏"
+                    android:textColor="#a6000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tV_cell_content_collect_num"
+                    style="@style/ContentImageBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView2"
+                    android:paddingBottom="10dp"
+                    android:text="15"
+                    android:textColor="#a6000000"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/ContentImageBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tV_cell_content_collect_num"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_toRightOf="@+id/textView"
+                    android:text="喜歡"
+                    android:textColor="#a6000000"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.firebase.udacity.friendlychat.CollectionsActivity.comment.WrapHeightListView
+        android:id="@+id/lV_cell_content_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

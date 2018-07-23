@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b3838"
+    android:orientation="vertical"
+    tools:context="com.google.firebase.udacity.friendlychat.DetailObjectFragment.ObjectInteractFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible" />
+
+        <com.wenchao.cardstack.CardStack
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:card_enable_loop="false"
+            app:card_enable_rotation="true"
+            app:card_gravity="top"
+            app:card_stack_size="4" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/bookmark"
+                app:fab_colorNormal="#272727"
+                app:fab_colorPressed="#404040"
+                app:fab_showShadow="true"
+                app:fab_size="normal"></com.github.clans.fab.FloatingActionButton>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/like"
+                app:fab_colorNormal="#272727"
+                app:fab_colorPressed="#404040"
+                app:fab_showShadow="true"
+                app:fab_size="normal"></com.github.clans.fab.FloatingActionButton>
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/edit"
+                app:fab_colorNormal="#272727"
+                app:fab_colorPressed="#404040"
+                app:fab_showShadow="true"
+                app:fab_size="normal"></com.github.clans.fab.FloatingActionButton>
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_navigate_next"
+                app:fab_colorNormal="#272727"
+                app:fab_colorPressed="#404040"
+                app:fab_showShadow="true"
+                app:fab_size="normal"></com.github.clans.fab.FloatingActionButton>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/feedback_slide_up_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="invisible"></LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/popupNameCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#beffffff"
+        android:visibility="gone">
+
+        <include layout="@layout/popup_name_card_interact" />
+
+        <FrameLayout
+            android:id="@+id/progressBarANDCheckedIVFrameLayout"
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:background="#FF2D2A2A"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/sendNameCardProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/successImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/success" />
+
+                <TextView
+                    android:id="@+id/textviewsuccessend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="發送成功!"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/nameCardsuccessCancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_close_white"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

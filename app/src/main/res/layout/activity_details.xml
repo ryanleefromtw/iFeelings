@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    app:theme="@style/ThemeOverlay.AppCompat">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:background="#cefcfafa"
+        android:fitsSystemWindows="true"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/white"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:title=""
+            app:titleEnabled="true">
+
+
+            <TextView
+                android:id="@+id/detailArtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="24dp"
+                android:text="帶著耳環的少女"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:transitionName="artTitle" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:elevation="7dp"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+
+            <SeekBar
+                android:id="@+id/musicSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:progress="100"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/detailArtImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.4"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:transitionName="artPhoto"
+                app:layout_collapseMode="parallax" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.
+        android:id="@+id/playfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#dde68284"
+        android:src="@drawable/ic_play_arrow"
+        app:fabSize="mini"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|start" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/art_intro"
+                layout="@layout/item_art_intro_nested_scrollview" />
+
+            <include
+                android:id="@+id/author_intro"
+                layout="@layout/item_author_intro_nested_scrollview" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#ceffffff"
+        android:visibility="gone"></FrameLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/nestedScrollView"
+        app:layout_anchorGravity="bottom|end"
+        app:menu_colorNormal="#272727"
+        app:menu_colorPressed="#404040"
+        app:menu_fab_label="創作"
+        app:menu_fab_size="normal"
+        app:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark"
+            app:fab_colorNormal="#272727"
+            app:fab_colorPressed="#404040"
+            app:fab_label="收藏"
+            app:fab_size="normal"
+            app:menu_colorRipple="#63c8e1" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/getCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/speech_bubble"
+            app:fab_colorNormal="#272727"
+            app:fab_colorPressed="#404040"
+            app:fab_size="normal"
+            app:fab_label="互動"
+            app:menu_colorRipple="#63c8e1" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <include
+        android:id="@+id/slideView"
+        layout="@layout/activity_detail_popup_writing_panle"
+        android:visibility="invisible" />
+</android.support.design.widget.CoordinatorLayout>

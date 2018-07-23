@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_place"
+        id="@+id/tab_Map"
+        title="地圖" />
+    <tab
+        icon="@drawable/ic_photo"
+        id="@+id/tab_Object"
+        title="展品" />
+
+    <tab
+        icon="@drawable/ic_collections_bookmark"
+        id="@+id/tab_collections"
+        title="收藏"/>
+
+    <tab
+        icon="@drawable/ic_account_circle"
+        id="@+id/tab_Settings"
+        title="帳號"
+        badgeHidesWhenActive="true"/>
+
+</tabs>

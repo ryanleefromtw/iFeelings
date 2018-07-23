@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+
+        <ImageView
+            android:id="@+id/iV_cell_title_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/the_girl" />
+
+        <TextView
+            android:id="@+id/tV_cell_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="樸樹帥嗎?"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            />
+        <jp.shts.android.library.TriangleLabelView
+            android:id="@+id/triangleLV_cell_title_newReply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundColor="@android:color/holo_red_dark"
+            app:corner="rightTop"
+            app:labelBottomPadding="5dp"
+            app:labelCenterPadding="8dp"
+            app:labelTopPadding="12dp"
+            app:primaryText="新回覆!"
+            app:primaryTextStyle="normal"
+            app:primaryTextColor="@android:color/white"
+            app:primaryTextSize="12sp"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+</LinearLayout>

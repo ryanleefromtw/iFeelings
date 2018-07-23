@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#2E7D32</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="colorBottomBar">#272727</color>
+    <color name="blue">#348af7</color>
+    <color name="temperature_background">@color/blue</color>
+    <color name="temperature_text">@android:color/white</color>
+    <color name="green_dot_big">@color/blue</color>
+    <color name="green_dot_small">@color/blue</color>
+    <color name="status_bar_color">#272727</color>
+    <color name= "collections_linar_bar_normal">#404040</color>
+     <color name= "choose_feelings_linar_bar_normal">#2d2a2a</color>
+    <color name= "collections_linear_bar_pressed">#272727</color>
+    <color name="yellow_text_color">#edbf36</color>
+    <color name="slidupviewcolor">#404040</color>
+
+</resources>

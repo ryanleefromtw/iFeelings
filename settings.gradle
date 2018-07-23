@@ -1,0 +1,1 @@
+include ':app', ':Svglibrary', ':card-slider', ':CardStack', ':wheelview', 'SliderUp', 'sweetAlertDialog', 'Sweet-Alert-Dialog', ':shadowimageview'

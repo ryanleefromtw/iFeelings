@@ -1,0 +1,48 @@
+Applications Memory Usage (kB):
+Uptime: 317872550 Realtime: 603243701
+
+** MEMINFO in pid 29586 [com.google.firebase.udacity.friendlychat] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     4966     4936        8     4248    12800    11034     1765
+  Dalvik Heap     4439     4424        0      968     7953     5496     2457
+ Dalvik Other      660      660        0       56                           
+        Stack      212      212        0        0                           
+       Ashmem        2        0        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     2596      104     1340     2176                           
+    .apk mmap     1778        0      148        0                           
+    .dex mmap    18574       16    15892        0                           
+    .oat mmap     3399        0      696        0                           
+    .art mmap     1214      900        4      292                           
+   Other mmap     1152        8     1084        0                           
+   EGL mtrack    10824    10824        0        0                           
+      Unknown      132      124        8       96                           
+        TOTAL    49952    22208    19184     7836    20753    16530     4222
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     5328
+         Native Heap:     4936
+                Code:    18196
+               Stack:      212
+            Graphics:    10824
+       Private Other:     1896
+              System:     8560
+ 
+               TOTAL:    49952      TOTAL SWAP (KB):     7836
+ 
+ Objects
+               Views:       34         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        4        AssetManagers:        3
+       Local Binders:       14        Proxy Binders:       21
+       Parcel memory:        4         Parcel count:       19
+    Death Recipients:        1      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:       62
+ 
